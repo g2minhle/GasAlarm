@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% load staticfiles %}
+{% block content %}
+<script src="{% static "js/setPhoneNumber.js" %}"></script>
+<p>Current phone number: <b>{{currentPhoneNumber}} </b></p>
+<p>Input your new phone number: </p>
+<p><input type="test" id="txt_PhoneNumber"/></p>
+<p><input type="submit" onClick="setPhoneNumber()"/></p>
+{% endblock %}
